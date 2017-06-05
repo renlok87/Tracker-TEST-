@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+# All requests send into entry point
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /index.php [L]
